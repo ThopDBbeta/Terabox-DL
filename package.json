@@ -1,7 +1,10 @@
 {
+  "name": "cloudflare-worker-project",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker deployment",
   "scripts": {
-    "dev": "wrangler dev src/index.ts",
-    "deploy": "wrangler deploy --minify src/index.ts",
+    "dev": "node src/index.ts",
+    "deploy": "node src/index.ts",
     "test": "jest"
   },
   "dependencies": {
@@ -13,7 +16,10 @@
     "jest-environment-miniflare": "^2.14.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20230518.0",
-    "wrangler": "^3.1.0"
-  }
+    "@cloudflare/workers-types": "^4.20230518.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "yarn@4.5.0"
 }
