@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "ts-node --loader ts-node/esm src/index.ts",
+    "dev": "node --loader ts-node/esm src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@cloudflare/workers-types": "^4.20230518.0",
-    "hono": "^3.2.7"
+    "@cloudflare/workers-types": "^4.20240304.0",
+    "hono": "^3.11.0",
+    "typescript": "^5.4.0"
   },
   "devDependencies": {
-    "ts-node": "^10.9.1",
-    "typescript": "^5.4.0"
+    "ts-node": "^10.9.2"
   }
 }
